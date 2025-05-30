@@ -1,0 +1,15 @@
+.inner-banner {
+	text-align: center;
+	padding-top: 105px;
+	padding-bottom: 50px;
+	background: #000 url(../img/inner-banner-1-1.jpg) center center no-repeat;
+	background-size: cover;
+	h3, ul {margin: 0;padding: 0;list-style: none;}
+	h3 {font-size: 36px;font-family: 'Poppins';font-weight: 600;color: #FFFFFF;margin-bottom: 5px;}
+	ul.breadcumb {
+		li {display: inline-block;vertical-align: middle;}
+		a, span {color: #FE5A0E;font-size: 18px;}
+		span.sep {margin-left: 10px;margin-right: 10px;color: #FE5A0E;}
+		span {color: #fff;}
+	}
+}

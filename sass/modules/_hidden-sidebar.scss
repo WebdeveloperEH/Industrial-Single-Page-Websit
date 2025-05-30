@@ -1,0 +1,112 @@
+.hidden-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #181818 url(../img/side-menu-bg.jpg) center center no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    z-index: 1000;
+    overflow: auto;
+    transition: all 0.5s ease-in-out;
+    transform: translate(0px, -100%) scale(0, 0);
+    opacity: 0;
+    &.open {
+    	transform: translate(0px, 0px) scale(1, 1);
+    	opacity: 1;
+    }
+    a.close-button {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        font-size: 25px;
+    }
+    .sidebar-content {
+    	padding: 40px 0;
+        .navigation-box {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-top: 130px;
+            margin-bottom: 150px;
+
+            li {
+                a {
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    transition: all .4s ease;
+                    display: block;
+                    &:hover {
+                        color: #fe5a0e;
+                    }
+                }
+                &.current {
+                    a {
+                        color: #fe5a0e;
+                    }
+                }
+                +li {
+                    margin-top: 20px;
+                }
+                .subnav-toggler {
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    color: #fe5a0e;
+                    font-size: 15px;
+                    padding: 0;
+                    margin-left: 5px;
+                    line-height: 1em;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                ul.sub-menu {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    display: none;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    li {
+                        a {
+                            color: #FFFFFF;
+                            font-size: 20px;
+                            transition: all .4s ease;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .social {
+            margin-bottom: 20px;
+            a {
+                display: inline-block;
+                vertical-align: middle;
+                color: #FFFFFF;
+                font-size: 16px;
+                line-height: 33px;
+                transition: all .4s ease;
+                border-radius: 50%;
+                &:hover {
+                    color: #fe5a0e;
+                }
+                +a {
+                    margin-left: 10px;
+                }
+            }
+        }
+        p.copy-text {
+            margin: 0;
+            color: #ffffff;
+            font-size: 15px;
+            i.fa-heart {
+                color: #fe5a0e;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.single-team-style-one {
+	.img-box {
+		position: relative;
+		> img {position: relative;z-index: 3;}
+		.name-box {width: 90%;position: absolute;bottom: 65px;
+			.inner {background:#FE5A0E;color: #FFFFFF;font-size: 18px;line-height: 1.2em;font-weight: 600;font-family: 'Poppins';padding: 17px 0;z-index: 4;position: relative;}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 100%;
+				right: 0;
+				width: 58px;
+				height: 51px;				
+				background: transparent url(../img/team-tri-shape.png) 0 0 no-repeat;
+				margin-top: -2px;
+				z-index: 1;
+			}
+		}
+	}
+	.text-box {
+		p {margin: 0;color: #888888;font-size: 16px;margin-top: 19px;}
+		.social {
+			margin-top: 5px;
+			a {color: #262626;font-size: 16px;transition: all .4s ease;
+				&:hover {color: #FE5A0E;}
+				+ a {margin-left: 11px;}
+			}
+		}
+	}
+}
+
+.team-style-one {
+	.sec-title {margin-bottom: 85px;}
+}
+
+.team-page {
+	padding-bottom: 75px;
+	.single-team-style-one {margin-bottom: 50px;}
+}
+
+.single-team-style-two {
+	text-align: center;
+	.img-box {
+		width: 185px;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+		position: relative;
+		border-radius: 50%;
+		.social {
+			position: absolute;
+			top:0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background:rgba(#FE5A0E, .75);
+			display: flex;
+			align-items: center;
+			border-radius: 50%;
+			transform: scale(0);
+			transition: all .4s ease;
+			.inner {text-align: center;width: 100%;}
+			a {font-size: 16px;color: #fff;
+				+ a {margin-left: 10px;}
+			}
+		}		
+		> img {border-radius: 50%;width: 100%;transition: all .4s ease;transform: scale(1);}
+		&:hover {
+			> img {transform: scale(1.02);}
+			.social {transform: scale(1);}
+		}
+	}
+	.text-box {
+		h3, p {margin: 0;}
+		h3 {color: #262626;font-family: 'Poppins';font-size: 18px;font-weight: 600;margin-top: 30px;}
+		p {font-size: 16px;color: #888888;margin-top: 5px;}
+	}
+}
+.team-style-two {
+	.sec-title {margin-bottom: 75px;}
+}
+.team-style-two-carousel {
+	.owl-nav [class*=owl-] {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #DDDDDD;
+        color: #888888;
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        line-height: 28px;
+        transition: all .4s ease;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:hover {
+            background: #FE5A0E;
+        }
+    }
+
+    .owl-nav .owl-prev {
+        left: -14px;
+    }
+
+    .owl-nav .owl-next {
+        right: -14px;
+    }
+}

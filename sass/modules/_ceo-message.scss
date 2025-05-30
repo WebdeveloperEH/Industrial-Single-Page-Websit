@@ -1,0 +1,13 @@
+.ceo-message-wrapper {
+	background:#F4F5F5 url(../img/ceo-message-bg.jpg) center center no-repeat;
+	background-size: 100% 100%;
+	padding: 125px 0;
+	.ceo-message-content {
+		padding-left: 40px;
+		padding-top: 60px;
+		h3, p {margin: 0;}
+		h3 {color: #252525;font-size: 30px;font-weight: 600;font-family: 'Poppins';margin-bottom: 10px;}
+		span {color: #878787;font-size: 16px;}
+		p {color: #545454;font-size: 15px;line-height: 27px;letter-spacing: 0.025em;margin-top: 20px;margin-bottom: 30px;}
+	}
+}

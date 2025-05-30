@@ -1,0 +1,35 @@
+.award-winning {
+	background:#262626;
+	border-bottom: 3px solid #FE5A0E;
+	padding: 35px 0;
+	.title {
+		padding-top: 25px;
+		h3, p {margin: 0;}
+		h3 {font-family: 'Poppins';font-weight: 600;color: #FFFFFF;font-size: 32px;
+			span {color: #FE5A0E;font-family: 'Playfair Display', serif;font-weight: bold;font-style: italic; @include thmGradientText();}
+			&:after {
+				display: inline-block;
+				vertical-align: bottom;
+				content: '';
+				width: 38px;
+				height: 2px;
+				background:#FFFFFF;
+				margin-left: 15px;
+			}
+		}
+		p {font-size: 16px;line-height: 28px;color: #FFFFFF;letter-spacing: .01em;margin-top: 8px;}
+	}
+	.img-box {
+		position: relative;
+		&:before {
+			content: '';
+			width: 1px;
+			height: 93px;
+			background:#626161;
+			position: absolute;
+			left: 54%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}

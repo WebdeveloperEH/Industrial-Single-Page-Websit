@@ -1,0 +1,85 @@
+.portfolio-style-two {
+	padding-bottom: 90px;
+	.sec-title {margin-bottom: 70px;}
+	.gallery-filter {
+		margin-bottom: 60px;
+		ul {margin: 0;padding: 0; list-style: none;text-align: center;border-top: 1px solid #e3dfdf;
+			li {display: inline-block;vertical-align: middle;
+				span {display: block;color: #262626;font-size: 16px;font-weight: 600;font-family: 'Poppins';cursor: pointer;line-height: 25px;position: relative;padding: 17px 37px;
+					&:after {content: '';position: absolute;bottom:100%;left: 0;width: 100%;height: 3px;background:#FE5A0E;transform: scale(0);transition: all .4s ease;}
+					i {font-size: 25px;display: inline-block;vertical-align: middle;margin-right: 13px;}
+				}
+				&.active {
+					span {color: #FE5A0E;
+						&:after {transform: scale(1);}
+					}
+				}
+			}
+		}
+	}
+	.single-portfolio-style-two {
+		margin-bottom: 35px;
+		.img-box {
+			position: relative;
+			> img {width: 100%;}
+			.overlay {position: absolute;top:10px;left: 10px;right: 10px;bottom: 10px;text-align: center;background:#262626;opacity: 0;transition: all .4s ease;
+				.box {
+					display: table;
+					width: 100%;
+					height: 100%;
+					.content {display: table-cell;vertical-align: middle;
+						span {color: #FE5A0E;font-size: 14px;}
+						h3 {font-family: 'Poppins';font-size: 16px;font-weight: 600;color: #fff;margin: 0;margin-top: 5px;margin-bottom: 7px;}
+						a.img-popup {color: #FE5A0E;font-size: 15px;position: absolute;top: 20px;right: 20px;}
+					}
+				}
+			}
+		}
+		&:hover {
+			.img-box {
+				.overlay {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&.full-width {
+		overflow: hidden;
+		.container-fluid {
+			width: 100%;
+			margin: 0;padding: 0;			
+		}
+		.single-portfolio-style-two {margin-bottom: 0;}
+	}
+	&.no-gutter {
+		.row {margin: 0;}
+		[class*=col-] {padding: 0;}
+	}
+}
+
+.project-details {
+	padding: 125px 0;
+	.project-details-content {
+		padding-top: 50px;
+		padding-left: 45px;
+		padding-right: 70px;
+		h3, p {margin: 0;}
+		h3 {color: #252525;font-size: 30px;font-weight: 600;font-family: 'Poppins';}
+		p {font-size: 15px;line-height: 27px;color: #878787;}
+		.starts {
+			i {color: #FF5D17;font-size: 18px;
+				+ i {margin-left: 6px;}
+			}
+		}
+		ul.meta-info {
+			margin: 0;padding: 0;list-style: none;
+			li {
+				color: #878787;font-size: 15px;
+				+ li {margin-top: 7px;}
+				i {color: #FF5D17;font-size: 12px;margin-right: 5px;}
+				span {color: #252525;font-size: 15px;font-family: 'Poppins';font-weight: 500;margin-right: 5px;}
+			}
+		}
+	}
+}

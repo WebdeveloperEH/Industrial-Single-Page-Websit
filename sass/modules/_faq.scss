@@ -1,0 +1,74 @@
+.faq-style-one {
+    .sec-title {
+        padding-top: 25px;
+        margin-bottom: 45px;
+    }
+    .accrodion-grp {
+        background:#F6F6F6;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .accrodion {
+            padding-left: 25px;
+            padding-right: 25px;
+            + .accrodion {
+                .accrodion-title {
+                    border-top: 1px solid #e1e1e1;
+                }
+            }        	
+            .accrodion-title {
+            	padding: 22px 0;
+            	cursor: pointer;
+                transition: all .4s ease;
+                h4 {
+                    margin: 0;
+                    position: relative;
+                    font-size: 18px;
+                    color: #262626;
+                    font-weight: 600;
+                    font-family: 'Poppins';
+                    &:before {
+                        content: "\f063";
+                        font-family: 'Font Awesome 5 Free';
+                        color: #999999;
+                        font-size: 10px;
+                        position: absolute;
+                        top: 50%;
+                        right: 0px;
+                        transform: translateY(-50%);
+                        font-weight: 900;
+                        width: 25px;
+                        height: 25px;
+                        line-height: 21px;
+                        border-radius: 50%;
+                        border: 2px solid #999999;
+                        text-align: center;
+                    }
+                }
+            }
+            .accrodion-content {
+
+                .inner {padding-bottom: 20px;}
+                p {
+                    margin: 0;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #555555;
+                }
+            }
+            &.active {
+                .accrodion-title {                    
+                    h4 {color: #FE5A0E;}
+                    h4:before {                    
+                        content: "\f062";
+                        font-weight: 900;
+                        color: #262626;
+                        border-color: #262626;
+                    }
+                }
+            }
+        }
+    }
+    a.more-info {color: #FE5A0E;font-size: 16px;font-weight: 600;font-family: 'Poppins';letter-spacing: .01em;display: inline-block;margin-top: 35px;transition: all .4s ease;margin-left: 0;
+        &:hover {margin-left: 10px;}
+    }
+}

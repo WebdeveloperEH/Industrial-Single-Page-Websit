@@ -1,0 +1,170 @@
+.coming-soon-block {
+    text-align: center;
+    background: #000 url(../img/404-bg.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    @media (max-height: 1000px) {
+        height: 1000px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000000;
+        opacity: .8;
+    }
+
+    .box {
+        width: 100%;
+        height: 100%;
+        display: table;
+        position: relative;
+        z-index: 10;
+
+        .content {
+            display: table-cell;
+            vertical-align: middle;
+            overflow: hidden;
+
+            h3,
+            p {
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 80px;
+                color: #FFFFFF;
+                font-weight: 600;
+                font-family: 'Poppins';
+                margin-bottom: 20px;
+                span {font-family: 'Playfair Display', serif;font-weight: bold;font-style: italic; @include thmGradientText();}
+            }
+
+            p {
+                font-size: 20px;
+                color: #FFFFFF;
+                margin-top: 0px;
+                margin-bottom: 80px;
+            }
+
+            ul.countdown-box {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                margin: 0 -65px;
+
+                li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 0 65px;
+
+                    .box {
+                        text-align: center;
+
+                        h4 {
+                            margin: 0;
+                            color: #FE5A0E;
+                            font-size: 40px;
+                            font-family: 'Poppins';
+                            font-weight: 600;
+                            line-height: 1em;
+                            display: block;
+                        }
+
+                        span {
+                            color: #FFFFFF;
+                            font-size: 20px;
+                            line-height: 1em;
+                            display: block;
+                            margin-top: 14px;
+                        }
+                    }
+                }
+            }
+
+            .btn-box {
+                margin-top: 90px;
+
+                a {
+                    display: inline-block;
+                    vertical-align: middle;
+                    background: #FE5A0E;
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-family: 'Poppins';
+                    color: #fff;
+                    width: 205px;
+                    height: 54px;
+                    line-height: 54px;
+                    text-align: center;
+                    transition: all .4s ease;
+
+                    &:before {
+                        background: #252525;
+                    }
+
+                    &.style-two {
+                        margin-left: 45px;
+                        background: #fff;
+                        color: #262626;
+
+                        &:before {
+                            background: #252525;
+                        }
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .logo {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 12;
+
+        @media (max-height: 1000px) {
+            top: 50px;
+        }
+    }
+
+    .copy-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        overflow: hidden;
+
+        .inner {
+            position: relative;
+            z-index: 11;
+            font-size: 15px;
+            color: #fff;
+            padding: 35px 0;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50px;
+            transform: skewX(45deg);
+            background: #fe5a0e;
+            width: 100000px;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,158 @@
+.fact-counter-section {
+    background: #000 url(../img/fact-counter-bg.jpg) center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 195px;
+
+    .sec-title {margin-bottom: 75px;}
+
+    &:before {
+        content: '';
+        opacity: .88;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #0c0c0c;
+    }
+
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+
+    .progress-box {
+        p {
+            color: #FFFFFF;
+            font-size: 16px;
+            line-height: 27px;
+            margin: 0;
+        	margin-bottom: 30px;
+        }
+    }
+
+    .single-progress-bar {
+        +.single-progress-bar {
+            margin-top: 20px;
+        }
+
+        .labeled-text,
+        .progress-scale,
+        .percent {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .labeled-text {
+            color: #fff;
+            font-size: 16px;
+            width: 140px;
+            margin-right: 20px;
+        }
+
+        .progress-scale {
+            width: 100%;
+            max-width: 285px;
+            background: #F1F1F1;
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+
+            .inner {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                border-radius: 5px;
+                animation-duration: 2s;
+                background: #FE5A0E;
+            }
+        }
+
+        .percent {
+            color: #262626;
+            font-size: 14px;
+            background: #FFFFFF;
+            line-height: 1em;
+            text-align: center;
+            border-radius: 3px;
+            padding: 13px 9px 10px;
+            margin-left: 20px;
+            line-height: 0;
+        }
+    }
+
+    .single-fact-counter {
+
+        .icon-box,
+        .text-box {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .icon-box {
+            width: 63px;
+
+            i {
+                font-size: 63px;
+                color: #ffffff;
+            }
+        }
+
+        .text-box {
+            padding-left: 15px;
+
+            h3,
+            p {
+                margin: 0;
+            }
+
+            h3 {
+                line-height: 1em;
+                color: #FE5A0E;
+                font-size: 36px;
+                font-family: 'Poppins';
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            p {
+                line-height: 1.2em;
+                color: #FFFFFF;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .fact-counter {
+        margin-top: -100px;
+        position: relative;
+
+        .divider {
+            position: absolute;
+            background: #3f3f3f;
+
+            &.hor {
+                height: calc(100% - 100px);
+                width: 1px;
+                bottom: 0;
+                left: 42%;
+            }
+
+            &.ver {
+                height: 1px;
+                left: 15px;
+                top: 64%;
+                right: 15px;
+            }
+        }
+
+        .single-fact-counter {
+            padding-top: 100px;
+        }
+    }
+}

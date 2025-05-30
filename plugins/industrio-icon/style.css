@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "industrio-icon";
+  src: url("fonts/industrio-icon.eot?s7l8gu");
+  src: url("fonts/industrio-icon.eot?s7l8gu#iefix") format("embedded-opentype"),
+    url("fonts/industrio-icon.ttf?s7l8gu") format("truetype"),
+    url("fonts/industrio-icon.woff?s7l8gu") format("woff"),
+    url("fonts/industrio-icon.svg?s7l8gu#industrio-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="industrio-icon-"],
+[class*=" industrio-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "industrio-icon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.industrio-icon-emails-interface-download-symbol:before {
+  content: "\e921";
+}
+.industrio-icon-pdf:before {
+  content: "\e922";
+}
+.industrio-icon-menu:before {
+  content: "\e920";
+}
+.industrio-icon-next:before {
+  content: "\e900";
+}
+.industrio-icon-coffee-cup:before {
+  content: "\e901";
+}
+.industrio-icon-team:before {
+  content: "\e902";
+}
+.industrio-icon-child:before {
+  content: "\e903";
+}
+.industrio-icon-play-button:before {
+  content: "\e904";
+  color: #fe5a0e;
+}
+.industrio-icon-wind-engine:before {
+  content: "\e905";
+}
+.industrio-icon-settings-1:before {
+  content: "\e906";
+}
+.industrio-icon-delivery-truck:before {
+  content: "\e907";
+}
+.industrio-icon-support:before {
+  content: "\e908";
+}
+.industrio-icon-secure-shield:before {
+  content: "\e909";
+}
+.industrio-icon-atomic:before {
+  content: "\e90a";
+}
+.industrio-icon-plant:before {
+  content: "\e90b";
+}
+.industrio-icon-settings:before {
+  content: "\e90c";
+}
+.industrio-icon-safety:before {
+  content: "\e90d";
+}
+.industrio-icon-drop-of-liquid:before {
+  content: "\e90e";
+}
+.industrio-icon-scythe:before {
+  content: "\e90f";
+}
+.industrio-icon-factory-1:before {
+  content: "\e910";
+}
+.industrio-icon-green-energy:before {
+  content: "\e911";
+}
+.industrio-icon-innovation:before {
+  content: "\e912";
+}
+.industrio-icon-gas-station-1:before {
+  content: "\e913";
+}
+.industrio-icon-layers:before {
+  content: "\e914";
+}
+.industrio-icon-atom:before {
+  content: "\e915";
+}
+.industrio-icon-flasks:before {
+  content: "\e916";
+}
+.industrio-icon-gas-station:before {
+  content: "\e917";
+}
+.industrio-icon-gas-pipe:before {
+  content: "\e918";
+}
+.industrio-icon-tower:before {
+  content: "\e919";
+}
+.industrio-icon-valve:before {
+  content: "\e91a";
+}
+.industrio-icon-industry:before {
+  content: "\e91b";
+}
+.industrio-icon-worker:before {
+  content: "\e91c";
+}
+.industrio-icon-envelope:before {
+  content: "\e91d";
+}
+.industrio-icon-clock:before {
+  content: "\e91e";
+}
+.industrio-icon-phone-call:before {
+  content: "\e91f";
+}
+.industrio-icon-right-quote:before {
+  content: "\e923";
+}

@@ -1,0 +1,13 @@
+.brand-carousel-area {
+	padding: 65px 0;
+	.brand-carousel {
+		text-align: center;
+		i {font-size: 150px;color: #888888;transition: all .4s ease;
+			&:hover {color: #000;}
+		}
+		.owl-nav {display: none;}
+	}
+	&.home-three {
+		padding: 10px 0;
+	}
+}
